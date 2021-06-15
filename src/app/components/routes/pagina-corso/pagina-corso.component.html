@@ -1,0 +1,82 @@
+<div class="container-fluid border-bottom pb-4 mb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="py-5">Titolo Corso</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h3 class="pb-3">Ottimo, continua così!</h3>
+                <p>Progress test x ore su y, x ore rimanenti (x%) - Punti x su y (x%)</p>
+                <div class="progress mt-2 mb-4">
+                    <div class="progress-bar" style="width: 100%;"></div>
+                </div>
+                <p>Per portare a termine il corso devi completare tutte le ore previste / ottenere un punteggio sopra il x%.</p>
+                <a href="#" class="btn btn-primary mt-3 py-3 px-4" type="button">Continua la lezione</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-9">
+            <!-- Titolo lezioni -->
+            <div class="row">
+                <div class="col">
+                    <h1 class="pb-3">Lezioni in questo corso</h1>
+                    <p>Aggiungi il programma al tuo calendario:</p>
+                    <!-- buttons calendari -->
+                    <div class="d-flex flex-column flex-sm-row pt-2" id="calendari">
+                        <button class="btn btn-primary mr-2" type="button">
+                            <img src="assets/img/outline_event_black_24dp.png" class="pr-2">
+                            Google Calendar
+                        </button>
+                        <button class="btn btn-primary mr-2" type="button">
+                            <img src="assets/img/outline_event_black_24dp.png" class="pr-2">
+                            iCalendar
+                        </button>
+                        <button class="btn btn-primary" type="button">
+                            <img src="assets/img/outline_event_black_24dp.png" class="pr-2">
+                            Outlook Online
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Lezioni del corso -->
+            <app-lezione></app-lezione>
+        </div>
+
+        <div class="col-12 col-lg-3 d-flex flex-column" id="info">
+            <!-- Informazioni pratiche -->
+            <div class="row mb-3">
+                <div class="col">
+                    <h4>Informazioni pratiche</h4>
+                    <p>Costo:</p>
+                    <p>Data inizio:</p>
+                    <p>Data fine:</p>
+                    <p>Durata:</p>
+                    <p>Docente:</p>
+                    <p>Aula:</p>
+                    <p>Descrizione:</p>
+                </div>
+            </div>
+            <!-- FAQ -->
+            <div class="row mb-3">
+                <div class="col">
+                    <h4>FAQ</h4>
+                    <p>Frequently Asked Questions</p>
+                </div>
+            </div>
+            <!-- Domande -->
+            <div class="row mb-3">
+                <div class="col">
+                    <h4>Domande</h4>
+                    <p>Lista domande fatte durante il corso</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

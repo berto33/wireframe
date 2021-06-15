@@ -1,0 +1,38 @@
+/* SEARCHBAR DEI CORSI */
+
+label {
+    margin-left: 0.1rem;
+}
+
+input {
+    padding-left: 0.4rem;
+    border-radius: 0.5rem;
+}
+
+#searchbar-filter button {
+    width: 2.5rem;
+    background-image: url(src/assets/img/outline_search_black_24dp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+#searchbar-filter input {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1199px) {
+    #searchform {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #searchbar-filter {
+        display: none !important;
+    }
+}

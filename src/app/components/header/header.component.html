@@ -1,0 +1,33 @@
+<header class="container-fluid">
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container justify-content-end">
+            
+            <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+                <span class="navbar-toggler-icon">
+                    <span hidden>Toggle navigation</span> <!-- class="visually-hidden" in Bootstrap v5.0 -->
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" [ngbCollapse]="isMenuCollapsed">
+                <ul class="navbar-nav py-2">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/">Corsi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-md-2" routerLink="/">Archivio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-md-2" routerLink="/">Tutorial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-md-2" routerLink="/">About</a>
+                    </li>
+                </ul>
+                <!-- 
+                If you would like the menu to close when a link is clicked, add a (click) handler to each link and set the property on the component to true to hide the menu. <a (click)="isMenuCollapsed = true"></a>
+                -->
+            </div>
+
+        </div>
+    </nav>
+</header>

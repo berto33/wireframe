@@ -1,0 +1,45 @@
+.container-fluid a {
+    width: fit-content;   
+    border-radius: 1rem;
+}
+
+#calendari button {
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 575px) {
+    p {
+        font-size: 0.7rem;
+    }
+    .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #calendari {
+        margin-bottom: 0.5rem;
+    }
+    #calendari button {
+        width: fit-content;
+    }
+    #calendari button:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #info p {
+        font-size: 0.9rem;
+    }    
+}
+
+@media screen and (max-width: 767px) {
+    #calendari {
+        justify-content: space-around;
+    }
+}

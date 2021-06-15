@@ -1,0 +1,44 @@
+a {
+    color: inherit;
+}
+    
+@media screen and (max-width: 767px) {
+    a {
+        font-size: 0.9rem;
+    }
+}
+
+/* SIDEBAR */
+
+ #sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+    background-color: aqua;
+    position: absolute;
+    z-index: 1;
+    top: calc(0 - 2.5rem);
+    left: 0;
+    height: 100%;
+    width: 20rem;
+}
+
+#previous-page {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    width: fit-content;
+    margin: 1rem;
+}
+
+#previous-page a {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+    background: url(src/assets/img/close_white_24dp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #aaaaaa;
+}

@@ -1,0 +1,25 @@
+:host {
+    margin-top: auto;
+}
+
+footer {
+    background-color: #aaaaaa;
+}
+
+.footer-basic {
+    padding: 0;
+    color: #fff !important;
+}
+
+p:last-child {
+    padding-left: 1rem;
+}
+
+@media screen and (max-width:768px) {
+    p:first-child {
+        display: none;
+    }
+    footer > div > div {
+        justify-content: center;
+    }
+}

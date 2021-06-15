@@ -1,0 +1,48 @@
+:host {
+    width: 100%;
+}
+
+.row > div {
+    padding-bottom: 2rem;
+}
+
+img {   
+    opacity: 0.9;
+    object-fit: cover;
+    height: 15rem;
+}
+
+.card {
+    border-bottom: 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card-img-top {
+    border-top-left-radius: calc(1.5rem - 1px);
+    border-top-right-radius: calc(1.5rem - 1px);
+}
+
+h4 {
+    padding: 0 0.3rem;
+    border-radius: 0.5rem;
+    background-color: #ffffffb3;
+}
+
+a {
+    height: 4rem;
+    border-bottom-left-radius: calc(1.5rem - 1px) !important;
+    border-bottom-right-radius: calc(1.5rem - 1px) !important;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+@media screen and (max-width:767px) {
+    .card p {
+        font-size: 0.9rem;
+    }
+}

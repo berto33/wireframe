@@ -1,0 +1,12 @@
+header {
+    background-color: #aaaaaa;
+}
+
+header .nav-link {
+    padding: 0;
+    color: #fff !important;
+}
+
+.navbar {
+    padding: 0;
+}
