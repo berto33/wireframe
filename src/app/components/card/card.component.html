@@ -1,21 +1,21 @@
-<div class="row">
-    <div class="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6" *ngFor="let corso of corsi">
+<!-- <div class="row">
+    <div class="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6" *ngFor="let corso of corsi"> -->
         <div class="card">
             <img class="card-img-top w-100 d-block" src="../assets/img/pexels-pixabay-247791.jpg">
+            <!-- card-body -->
             <div class="card-body">
-                <!-- card title -->
-                <div class="card-img-overlay"><h4 class="ellipsis5lines">{{corso.titolo}}</h4></div>
-                <!-- progress time -->
+                <div class="card-img-overlay">
+                    <h4 class="ellipsis5lines">{{corso.titolo}}</h4>
+                </div>
                 <p class="card-text pb-2 font-weight-bold">Avanzamento corso: {{corso.progresso}}%</p>
-                <!-- progress bar (vedere ngb-progressbar) -->
+                <!-- (vedere ngb-progressbar) -->
                 <div class="progress">
                     <div class="progress-bar w-{{corso.progresso}}"></div>
                 </div>
-                <!-- expire date -->
                 <p class="card-text pt-3">Data scadenza: {{corso.scadenza}}</p>
             </div>
         </div>
         <!-- card button -->
         <a routerLink="/pagina-corso" class="btn btn-outline-primary btn-block align-items-center">Vedi corso</a>
-    </div>
-</div>
+    <!-- </div>
+</div> -->

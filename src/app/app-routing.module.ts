@@ -7,7 +7,7 @@ import { PaginaCorsoComponent } from './components/routes/pagina-corso/pagina-co
 import { PaginaLezioneComponent } from './components/routes/pagina-lezione/pagina-lezione.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/pagina-utente', pathMatch: 'full'},
+  {path: '', redirectTo: '/pagina-dashboard', pathMatch: 'full'},
   {path: 'pagina-dashboard', component: PaginaDashboardComponent},
   {path: 'pagina-utente', component: PaginaUtenteComponent},
   {path: 'pagina-corso', component: PaginaCorsoComponent},

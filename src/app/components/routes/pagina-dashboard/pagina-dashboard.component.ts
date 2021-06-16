@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CORSI } from 'src/app/mock-corsi';
 
 @Component({
   selector: 'app-pagina-dashboard',
@@ -7,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class PaginaDashboardComponent implements OnInit {
+  corsi = CORSI;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
   
 }

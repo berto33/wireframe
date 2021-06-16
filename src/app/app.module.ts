@@ -9,10 +9,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
 import { LezioneComponent } from './components/lezione/lezione.component';
 
+import { PaginaDashboardComponent } from './components/routes/pagina-dashboard/pagina-dashboard.component';
 import { PaginaUtenteComponent } from './components/routes/pagina-utente/pagina-utente.component';
 import { PaginaCorsoComponent } from './components/routes/pagina-corso/pagina-corso.component';
 import { PaginaLezioneComponent } from './components/routes/pagina-lezione/pagina-lezione.component';
-import { PaginaDashboardComponent } from './components/routes/pagina-dashboard/pagina-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +20,11 @@ import { PaginaDashboardComponent } from './components/routes/pagina-dashboard/p
     HeaderComponent,
     FooterComponent,
     CardComponent,
+    LezioneComponent,
+    PaginaDashboardComponent,
     PaginaUtenteComponent,
     PaginaCorsoComponent,
     PaginaLezioneComponent,
-    LezioneComponent,
-    PaginaDashboardComponent,
   ],
 
   imports: [

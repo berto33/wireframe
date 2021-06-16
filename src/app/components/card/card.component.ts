@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { CORSI } from '../../mock-corsi'
+import { Component, OnInit, Input } from '@angular/core';
+// import { CORSI } from '../../mock-corsi'
+import {Corso} from '../../Corso';
 
 @Component({
   selector: 'app-card',
@@ -8,12 +9,12 @@ import { CORSI } from '../../mock-corsi'
 })
 
 export class CardComponent implements OnInit {
-  corsi = CORSI;
+  // corsi = CORSI;
+  @Input() corso: Corso;
 
   constructor() {
     // var bar = document.getElementsByClassName('progress-bar');
     // console.log(bar);
-    
   }
 
   ngOnInit(): void { }

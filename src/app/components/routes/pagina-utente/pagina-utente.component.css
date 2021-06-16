@@ -25,6 +25,12 @@ input {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 576px) {
+    .container-fluid {
+        padding: 0;
+    }
+}
+
 @media screen and (max-width: 1199px) {
     #searchform {
         display: none !important;
