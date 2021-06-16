@@ -7,9 +7,11 @@
 }
 
 img {   
-    opacity: 0.9;
+    filter: blur(2px);
     object-fit: cover;
     height: 15rem;
+    border-top-left-radius: calc(1.5rem - 1px);
+    border-top-right-radius: calc(1.5rem - 1px);
 }
 
 .card {
@@ -18,11 +20,6 @@ img {
     border-top-right-radius: 1.5rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-}
-
-.card-img-top {
-    border-top-left-radius: calc(1.5rem - 1px);
-    border-top-right-radius: calc(1.5rem - 1px);
 }
 
 h4 {
@@ -41,8 +38,14 @@ a {
     border-radius: 0;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .card p {
         font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    img {
+        height: 10rem;
     }
 }

@@ -1,9 +1,11 @@
-#user a {
-    font-size: 0.8rem;
+#user-avatar > img {
+    height: 10rem;
+    width: 10rem;
+    object-fit:cover;
 }
 
-#user a img {
-    width: 20%;
+#user-avatar a {
+    font-size: 0.8rem;
 }
 
 /* SEARCHBAR DEI CORSI */
@@ -42,5 +44,43 @@ input {
 @media screen and (min-width: 1200px) {
     #searchbar-filter {
         display: none !important;
+    }
+}
+
+/* CARD PROVVISORIA */
+
+#provvisoria img {   
+    opacity: 0.9;
+    object-fit: cover;
+    height: 15rem;
+}
+
+#provvisoria a {
+    height: 4rem;
+    border-bottom-left-radius: calc(1.5rem - 1px) !important;
+    border-bottom-right-radius: calc(1.5rem - 1px) !important;
+}
+
+#provvisoria .btn {
+    border-radius: 0;
+}
+
+.card {
+    border-bottom: 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card-img-top {
+    filter: blur(2px);
+    border-top-left-radius: calc(1.5rem - 1px);
+    border-top-right-radius: calc(1.5rem - 1px);
+}
+
+@media screen and (max-width:767px) {
+    .card p {
+        font-size: 0.9rem;
     }
 }

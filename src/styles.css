@@ -47,9 +47,18 @@ h1, h2, h3, h4 {
   }
 }
 
-.ellipsis5lines {
+.ellipsis {
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+@media screen and (max-width:991px) {
+  .ellipsis {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
