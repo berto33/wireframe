@@ -1,14 +1,38 @@
-#user-avatar > img {
+#user > div > img {
     height: 10rem;
     width: 10rem;
     object-fit:cover;
 }
 
-#user-avatar a {
+#user a {
+    width: fit-content;
     font-size: 0.8rem;
 }
 
+#user a > img{
+    width: 20%;
+}
+
+/*
+ MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+    #user > div > img {
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #user p {
+        font-size: rem;
+    }
+}
+
+
+
 /* SEARCHBAR DEI CORSI */
+/* ? creare component per searchbar? */
 
 label {
     margin-left: 0.1rem;
@@ -33,7 +57,7 @@ input {
     border-bottom-right-radius: 0.5rem;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES SEARCHBAR */
 
 @media screen and (max-width: 1199px) {
     #searchform {
@@ -47,7 +71,7 @@ input {
     }
 }
 
-/* CARD PROVVISORIA */
+/* ! CARD PROVVISORIA */
 
 #provvisoria img {   
     opacity: 0.9;

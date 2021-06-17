@@ -1,31 +1,33 @@
 <!-- user -->
-<div class="container mt-5" id="user">
+<div class="container mt-3 mt-lg-5">
     <div class="row">
-        <div class="col-12 col-lg-8 d-flex flex-column flex-lg-row align-items-center">
-            <div class="mr-3" id="user-avatar">
-                <img src="../../../../assets/img/pexels-italo-melo-2379004.jpg" class="img-thumbnail rounded-circle">
+        <div class="col-12 col-lg-8 d-flex flex-column flex-lg-row align-items-center align-items-lg-start" id="user">
+            <div class="mr-lg-3 mb-2 mb-lg-0">
+                <img src="/assets/img/pexels-italo-melo-2379004.jpg" class="img-thumbnail rounded-circle">
             </div>
             <div>
-                <div class="d-flex flex-column flex-lg-row">
-                    <h1 class="mr-3">Alberto Gloder</h1>
-                    <a class="btn btn-primary d-flex align-items-center my-auto py-1 px-2">
-                        <img src="../../../../assets/img/outline_edit_black_24dp.png" class="pr-2">
+                <div class="d-flex flex-column flex-lg-row align-items-center">
+                    <h1 class="mr-lg-3">Alberto Gloder</h1>
+                    <a class="btn btn-primary d-flex align-items-center mt-1 mb-2 m-lg-0 py-1 px-1">
+                        <img src="/assets/img/outline_edit_black_24dp.png" class="pr-2">
                         Modifica profilo
                     </a>
                 </div>
-                <div class="d-flex">
-                    <h5>Posizione</h5>
-                    <span class="mx-2">|</span>
-                    <h5>Azienda</h5>
+                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                    <div class="d-flex mb-2">
+                        <h4>Posizione</h4>
+                        <h4 class="mx-2">|</h4>
+                        <h4>Azienda</h4>
+                    </div>
+                    <p class="text-secondary">mail.aziendale@gmail.com</p>
                 </div>
-                <h6>mail.aziendale@gmail.com</h6>
             </div>
         </div>
 
-        <div class="col-12 col-lg-4 d-flex flex-column align-items-end justify-content-between">
-            <h4>I tuoi gruppi</h4>
-            <p class="border-bottom">Carraro SPA</p>
-            <p class="border-bottom">Addetti vendite Carraro</p>
+        <div class="col-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-end mt-3 mt-lg-0">
+            <h4 class="pb-2">I tuoi gruppi</h4>
+            <p class="border-bottom mb-1">Carraro SPA</p>
+            <p class="border-bottom mb-1">Addetti vendite Carraro</p>
             <p class="border-bottom">Gestore POS</p>
         </div>
     </div>
@@ -40,22 +42,23 @@
         </div>
     </div>
 
-    <!-- Cards -->
-    <div class="row" id="provvisoria">
-        <div class="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 pb-4">
+    <!-- ! CARD PROVVISORIA -->
+    <!-- TODO verificare se usarae la stessa card anche qui -->
+    <!-- <div class="row" id="provvisoria">
+        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
             <div class="card">
-                <img class="card-img-top w-100 d-block" src="../assets/img/pexels-pixabay-48195.jpg">
-                <!-- card-body -->
+                <img class="card-img-top w-100 d-block" src="/assets/img/pexels-pixabay-48195.jpg">
+                
                 <div class="card-body">
                     <h4 class="ellipsis6lines">Very long certificate name</h4>
                     <p class="card-text pt-2 pb-3 font-weight-bold">Voto finale: 10</p>
                     <p class="card-text">Data scadenza: 10.10.10</p>
                 </div>
             </div>
-            <!-- card button -->
-            <a routerLink="/pagina-corso" class="btn btn-outline-primary btn-block align-items-center">Vedi corso</a>
+            <a routerLink="/pagina-corso" class="btn btn-primary btn-block align-items-center">Vedi corso</a>
         </div>
-    </div>
+    </div>  -->
+
 </div>
 
 <!-- corsi che stai seguendo -->
@@ -108,7 +111,7 @@
     </div>
 
     <!-- Cards -->
-    <div class="row">
+    <div class="row ">
         <div class="col-12 col-xl-3 col-lg-4 col-sm-6 pb-4" *ngFor="let corso of corsi | slice:0:4">
             <app-card [corso]="corso"></app-card>
         </div>

@@ -6,10 +6,6 @@ ul > li:not(:last-child) {
     margin-bottom: 0.5rem;
 }
 
-a {
-    color: var(--blue);
-}
-
 @media screen and (max-width: 575px) {
     a {
         justify-content: left;

@@ -3,7 +3,7 @@
     border-radius: 1rem;
 }
 
-#calendari button {
+#calendari a {
     flex-direction: row;
     align-items: center;
     border-radius: 0.5rem;
@@ -24,7 +24,7 @@
     #calendari {
         margin-bottom: 0.5rem;
     }
-    #calendari button {
+    #calendari a {
         width: fit-content;
     }
     #calendari button:not(:last-child) {
