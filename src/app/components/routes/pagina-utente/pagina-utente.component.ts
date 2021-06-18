@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CORSI } from 'src/app/mock-corsi';
 
 @Component({
   selector: 'app-pagina-utente',
@@ -8,7 +7,6 @@ import { CORSI } from 'src/app/mock-corsi';
 })
 
 export class PaginaUtenteComponent implements OnInit {
-  corsi = CORSI;
   public isCollapsed = true;
 
   constructor() { }

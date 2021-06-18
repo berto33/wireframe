@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-// import { CORSI } from '../../mock-corsi'
-import {Corso} from '../../Corso';
+import { CORSI } from 'src/app/mock-corsi';
 
 @Component({
   selector: 'app-card',
@@ -9,8 +8,9 @@ import {Corso} from '../../Corso';
 })
 
 export class CardComponent implements OnInit {
-  // corsi = CORSI;
-  @Input() corso: Corso;
+  corsi = CORSI;
+  @Input() sliceStart?: number;
+  @Input() sliceEnd?: number;
 
   constructor() {
     // var bar = document.getElementsByClassName('progress-bar');

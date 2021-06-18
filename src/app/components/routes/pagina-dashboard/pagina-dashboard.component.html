@@ -43,7 +43,7 @@
     </div>
 
     <!-- ! CARD PROVVISORIA -->
-    <!-- TODO verificare se usarae la stessa card anche qui -->
+    <!-- TODO verificare se usare la stessa card anche qui -->
     <!-- <div class="row" id="provvisoria">
         <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
             <div class="card">
@@ -103,7 +103,7 @@
         <div class="col-12">
             <div class="input-group input-group-sm">
                 <div class="input-group-prepend">
-                    <button class="btn btn-outline-secondary" type="button"></button>
+                    <button class="btn btn-primary" type="button"></button>
                 </div>
                 <input type="text" class="form-control" placeholder="Cerca corso...">
               </div>
@@ -111,9 +111,5 @@
     </div>
 
     <!-- Cards -->
-    <div class="row ">
-        <div class="col-12 col-xl-3 col-lg-4 col-sm-6 pb-4" *ngFor="let corso of corsi | slice:0:4">
-            <app-card [corso]="corso"></app-card>
-        </div>
-    </div>
+    <app-card [sliceEnd]="4"></app-card>
 </div>
