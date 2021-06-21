@@ -8,9 +8,26 @@ a {
     }
 }
 
+#btn-back {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    margin: 1rem;
+}
+
+#btn-back a {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+    background: url(src/assets/img/arrow_back_white_24dp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #aaaaaa;
+}
+
 /* SIDEBAR */
 
- #sidebar {
+#sidebar {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -22,23 +39,4 @@ a {
     left: 0;
     height: 100%;
     width: 20rem;
-}
-
-#previous-page {
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    height: 100%;
-    width: fit-content;
-    margin: 1rem;
-}
-
-#previous-page a {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1rem;
-    background: url(src/assets/img/close_white_24dp.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #aaaaaa;
 }

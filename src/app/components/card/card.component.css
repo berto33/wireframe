@@ -1,10 +1,6 @@
-:host {
-    width: 100%;
-}
+:host { width: 100%; }
 
-.row > div {
-    padding-bottom: 2rem;
-}
+.row > div { padding-bottom: 2rem; }
 
 img {   
     filter: blur(2px);
@@ -28,15 +24,15 @@ h4 {
     background-color: #ffffffb3;
 }
 
+.progress { border-radius: 0; }
+
 a {
     height: 4rem;
     border-bottom-left-radius: calc(1.5rem - 1px) !important;
     border-bottom-right-radius: calc(1.5rem - 1px) !important;
 }
 
-.btn {
-    border-radius: 0;
-}
+.btn { border-radius: 0; }
 
 @media screen and (max-width:576px) {
     .row {
@@ -46,13 +42,9 @@ a {
 }
 
 @media screen and (max-width:768px) {
-    .card p {
-        font-size: 0.9rem;
-    }
+    .card p { font-size: 0.9rem; }
 }
 
 @media screen and (max-width: 991px) {
-    img {
-        height: 10rem;
-    }
+    img { height: 10rem; }
 }

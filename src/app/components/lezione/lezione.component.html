@@ -1,8 +1,8 @@
 <ul class="row d-flex flex-column p-0 mt-3">
-    <li class="col" *ngFor="let lezione of lezioni">
+    <li class="col-12 p-0" *ngFor="let lezione of lezioni">
         <a class="btn btn-primary py-3 w-100 rounded-0" type="button"
         (click)="getDocOrVid(lezione)">
-            <h3>Lezione {{lezione.id}}: {{lezione.titolo}}</h3>
+            <h3 class="ellipsis">Lezione {{lezione.id}}: {{lezione.titolo}}</h3>
         </a>
     </li>
 </ul>

@@ -27,15 +27,12 @@
     #calendari a {
         width: fit-content;
     }
+    #calendari a:not(:last-child) {
+        margin-bottom: 0.25rem;
+    }
     #calendari button:not(:last-child) {
         margin-bottom: 0.5rem;
     }
-}
-
-@media screen and (min-width: 576px) {
-    #info p {
-        font-size: 0.9rem;
-    }    
 }
 
 @media screen and (max-width: 767px) {
