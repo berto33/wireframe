@@ -4,22 +4,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { CardComponent } from './components/card/card.component';
-import { LezioneComponent } from './components/lezione/lezione.component';
+import { HeaderComponent } from './components/layout/header/header.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
+import { CartaCorsoComponent } from './components/views/carta-corso/carta-corso.component';
+import { CartaCertificatoComponent } from './components/views/carta-certificato/carta-certificato.component';
+import { LezioneComponent } from './components/views/lezione/lezione.component';
 
 import { PaginaDashboardComponent } from './components/routes/pagina-dashboard/pagina-dashboard.component';
 import { PaginaUtenteComponent } from './components/routes/pagina-utente/pagina-utente.component';
 import { PaginaCorsoComponent } from './components/routes/pagina-corso/pagina-corso.component';
 import { PaginaLezioneComponent } from './components/routes/pagina-lezione/pagina-lezione.component';
 
-@NgModule({
+
+
+@NgModule ({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CardComponent,
+    CartaCorsoComponent,
+    CartaCertificatoComponent,
     LezioneComponent,
     PaginaDashboardComponent,
     PaginaUtenteComponent,

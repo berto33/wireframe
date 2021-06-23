@@ -9,9 +9,7 @@
     font-size: 0.8rem;
 }
 
-#user a > img{
-    width: 20%;
-}
+#user a > img { width: 20%; }
 
 /*
  MEDIA QUERIES */
@@ -24,9 +22,7 @@
 }
 
 @media screen and (max-width: 575px) {
-    #user p {
-        font-size: rem;
-    }
+    #user p { font-size: rem; }
 }
 
 
@@ -45,11 +41,15 @@ input {
 
 #searchbar-filter button {
     width: 2.5rem;
-    background-image: url(/src/assets/img/outline_search_black_24dp.png);
+    background-image: url(/assets/icons/search_white.png);
     background-repeat: no-repeat;
     background-position: center;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+}
+
+#searchbar-filter button > img {
+    height: auto;
 }
 
 #searchbar-filter input {

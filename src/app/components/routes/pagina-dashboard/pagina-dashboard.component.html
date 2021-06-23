@@ -9,7 +9,7 @@
                 <div class="d-flex flex-column flex-lg-row align-items-center">
                     <h1 class="mr-lg-3">Alberto Gloder</h1>
                     <a class="btn btn-primary d-flex align-items-center mt-1 mb-2 m-lg-0 py-1 px-1">
-                        <img src="/assets/img/outline_edit_black_24dp.png" class="pr-2">
+                        <img src="/assets/icons/edit_white.png" class="pr-2">
                         Modifica profilo
                     </a>
                 </div>
@@ -33,36 +33,7 @@
     </div>
 </div>
 
-<!-- certificati -->
-<div class="container mt-5">
-    <div class="row pb-4">
-        <div class="col-12">
-            <h1 class="pb-2">Certificati guadagnati</h1>
-            <a routerLink="#">Vedi tutti i certificati</a>
-        </div>
-    </div>
-
-    <!-- <app-card [sliceEnd]="4"></app-card> -->
-
-    <!-- ! CARD PROVVISORIA -->
-    <!-- TODO verificare se usare la stessa card anche qui -->
-    <div class="row" id="provvisoria">
-        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
-            <div class="card">
-                <img class="card-img-top w-100 d-block" src="/assets/img/pexels-pixabay-48195.jpg">
-                
-                <div class="card-body">
-                    <h4 class="ellipsis6lines">Very long certificate name</h4>
-                    <p class="card-text pt-2 pb-3 font-weight-bold">Voto finale: 10</p>
-                    <p class="card-text">Data scadenza: 10.10.10</p>
-                </div>
-            </div>
-            <a routerLink="/pagina-corso" class="btn btn-primary btn-block align-items-center">Vedi corso</a>
-        </div>
-    </div> 
-</div>
-
-<!-- corsi che stai seguendo -->
+<!-- corsi -->
 <div class="container mt-5">
     <div class="row pb-4">
         <div class="col-12">
@@ -111,6 +82,17 @@
         </div>
     </div>
 
-    <!-- Cards -->
-    <app-card [sliceEnd]="4"></app-card>
+    <app-carta-corso [sliceEnd]="4"></app-carta-corso>
+</div>
+
+<!-- certificati -->
+<div class="container mt-5">
+    <div class="row pb-4">
+        <div class="col-12">
+            <h1 class="pb-2">Certificati guadagnati</h1>
+            <a routerLink="#">Vedi tutti i certificati</a>
+        </div>
+    </div>
+
+    <app-carta-certificato [sliceEnd]="4"></app-carta-certificato>
 </div>

@@ -1,13 +1,13 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CORSI } from 'src/app/mock-corsi';
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  selector: 'app-carta-corso',
+  templateUrl: './carta-corso.component.html',
+  styleUrls: ['./carta-corso.component.scss']
 })
 
-export class CardComponent implements OnInit {
+export class CartaCorsoComponent implements OnInit {
   corsi = CORSI;
   @Input() sliceStart?: number;
   @Input() sliceEnd?: number;

@@ -1,9 +1,7 @@
 /* SEARCHBAR DEI CORSI */
 /* ? creare component per searchbar? */
 
-label {
-    margin-left: 0.1rem;
-}
+label { margin-left: 0.1rem; }
 
 input {
     padding-left: 0.4rem;
@@ -12,7 +10,7 @@ input {
 
 #searchbar-filter button {
     width: 2.5rem;
-    background-image: url(/src/assets/img/outline_search_black_24dp.png);
+    background-image: url(/assets/icons/search_white.png);
     background-repeat: no-repeat;
     background-position: center;
     border-top-left-radius: 0.5rem;
@@ -27,19 +25,13 @@ input {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 576px) {
-    .container-fluid {
-        padding: 0;
-    }
+    .container-fluid { padding: 0; }
 }
 
 @media screen and (max-width: 1199px) {
-    #searchform {
-        display: none !important;
-    }
+    #searchform { display: none !important; }
 }
 
 @media screen and (min-width: 1200px) {
-    #searchbar-filter {
-        display: none !important;
-    }
+    #searchbar-filter { display: none !important; }
 }

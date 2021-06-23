@@ -1,7 +1,10 @@
 <div class="row">
-    <div class="col-12 col-xl-3 col-lg-4 col-sm-6 pb-3" *ngFor="let corso of corsi | slice:sliceStart:sliceEnd">
-        <div class="card">
-            <img class="card-img-top w-100 d-block" [src]=corso.img>
+    <div class="col-12 col-xl-3 col-lg-4 col-sm-6 pb-3"
+    *ngFor="let corso of corsi | slice:sliceStart:sliceEnd">
+        <div class="card overflow-hidden">
+            <div class="overflow-hidden">
+                <img class="card-img-top w-100 d-block" [src]=corso.img>
+            </div>
             <!-- card-body /assets/img/pexels-pixabay-247791.jpg-->
             <div class="card-body">
                 <div class="card-img-overlay">
@@ -12,7 +15,11 @@
                 <p class="card-text pb-2 font-weight-bold">
                     Avanzamento corso: {{corso.progresso}}%
                 </p>
-                <ngb-progressbar type="primary" [value]=corso.progresso height="0.25rem"></ngb-progressbar>
+                <ngb-progressbar
+                    type="primary"
+                    [value]=corso.progresso
+                    height="0.25rem">
+                </ngb-progressbar>
                 <p class="card-text pt-3">
                     Data scadenza: {{corso.scadenza}}
                 </p>
@@ -22,3 +29,5 @@
         <a routerLink="/pagina-corso" class="btn btn-primary btn-block align-items-center">Vedi corso</a>
     </div>
 </div>
+
+<!-- ! queste carte non hanno altezza fissa, se teniamo queste giocare sull'overflow-hidden e flexbox per il titolo in overlay senza dover settare un altezza minima o l'ellipsis con @media query -->

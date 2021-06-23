@@ -9,7 +9,8 @@ body {
   flex-direction: column;
   height: 100%;
   font-family: 'Raleway', sans-serif;
-  color: var(--dark);}
+  color: var(--dark);
+}
 
 html {
   width: 100%;
@@ -40,11 +41,12 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   overflow: hidden;
 }
 
-@media screen and (max-width:991px) {
-  .ellipsis {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-}
+// ! rimosso temporaneamente per decidere come tenere le carte
+// @media screen and (max-width:991px) {
+//   .ellipsis {
+//     display: -webkit-box;
+//     -webkit-line-clamp: 4;
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+//   }
+// }

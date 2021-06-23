@@ -2,10 +2,12 @@
 
 .row > div { padding-bottom: 2rem; }
 
-img {   
-    filter: blur(2px);
+img {
+    filter: blur(5px);
+    transform: scale(1.03); //! le immagini sono ingrandite di un 3% per rimuovere i bordi del filtro blur
     object-fit: cover;
-    height: 15rem;
+    min-height: 15rem;
+    max-height: 15rem;
     border-top-left-radius: calc(1.5rem - 1px);
     border-top-right-radius: calc(1.5rem - 1px);
 }
@@ -18,9 +20,13 @@ img {
     border-bottom-right-radius: 0;
 }
 
-h4 {
-    padding: 0 0.3rem;
-    border-radius: 0.5rem;
+.card-img-overlay {
+    bottom: 0;
+    height: 12.5rem;
+    margin: 1.25rem 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 0;
     background-color: #ffffffb3;
 }
 
@@ -41,7 +47,7 @@ a {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .card p { font-size: 0.9rem; }
 }
 
