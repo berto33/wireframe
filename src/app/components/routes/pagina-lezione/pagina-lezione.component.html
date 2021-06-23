@@ -1,16 +1,22 @@
 <!-- <div id="sidebar">
-    asfasf
+    sidebar
 </div> -->
 
-<div id="btn-back">
-    <a class="btn border-0 rounded-circle p-4" onclick="history.back()"></a>
+<div id="btn-back" class="h-100 m-4">
+    <!-- ? history.back (forse) non è la migliore soluzione -->
+    <a class="btn rounded-circle p-4" onclick="history.back()"></a>
 </div>
 
 <div class="container mt-4 mb-5" id="video-lezione">
     <div class="row">
         <div class="col">
-            <div id="video" class="ratio d-flex justify-content-center embed-responsive embed-responsive-16by9">
-                <iframe class="border rounded embed-responsive-item" src="https://www.youtube.com/embed/HmZKgaHa3Fg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <div id="video"
+            class="ratio d-flex justify-content-center embed-responsive embed-responsive-16by9">
+                <iframe 
+                class="border rounded embed-responsive-item"
+                src="https://www.youtube.com/embed/HmZKgaHa3Fg"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                </iframe>
             </div>
         </div>
     </div>

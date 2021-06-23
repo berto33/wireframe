@@ -6,7 +6,7 @@ import { LEZIONI } from 'src/app/mock-lezioni';
 @Component({
   selector: 'app-lezione',
   templateUrl: './lezione.component.html',
-  styleUrls: ['./lezione.component.css']
+  styleUrls: ['./lezione.component.scss']
 })
 
 export class LezioneComponent implements OnInit {

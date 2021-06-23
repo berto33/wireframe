@@ -12,20 +12,20 @@ a {
     position: absolute;
     right: 0;
     z-index: 1;
-    margin: 1rem;
+    background-color: transparent;
 }
 
 #btn-back a {
     position: -webkit-sticky;
     position: sticky;
-    top: 1rem;
-    background: url(src/assets/img/arrow_back_white_24dp.svg);
+    top: 1.5rem;
+    background-image: url(/assets/img/outline_arrow_back_white_24dp.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #aaaaaa;
+    background-color: var(--grigio-test);
 }
 
-/* SIDEBAR */
+// * SIDEBAR
 
 #sidebar {
     display: flex;

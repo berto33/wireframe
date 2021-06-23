@@ -14,29 +14,22 @@
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 575px) {
-    p {
-        font-size: 0.7rem;
-    }
     .container-fluid{
         padding-left: 0;
         padding-right: 0;
     }
-    #calendari {
-        margin-bottom: 0.5rem;
-    }
-    #calendari a {
-        width: fit-content;
-    }
-    #calendari a:not(:last-child) {
-        margin-bottom: 0.25rem;
-    }
-    #calendari button:not(:last-child) {
-        margin-bottom: 0.5rem;
-    }
+
+    p { font-size: 0.7rem; }
+
+    #calendari { margin-bottom: 0.5rem; }
+
+    #calendari a { width: fit-content; }
+
+    #calendari a:not(:last-child) { margin-bottom: 0.25rem; }
+
+    #calendari button:not(:last-child) { margin-bottom: 0.5rem; }
 }
 
 @media screen and (max-width: 767px) {
-    #calendari {
-        justify-content: space-around;
-    }
+    #calendari { justify-content: space-around; }
 }

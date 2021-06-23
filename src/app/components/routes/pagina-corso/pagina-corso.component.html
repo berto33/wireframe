@@ -9,12 +9,20 @@
     <div class="row">
         <div class="col-12">
             <h3 class="pb-3">Ottimo, continua così!</h3>
-            <p>Progress test x ore su y, x ore rimanenti (x%) - Punti x su y (x%)</p>
-            <div class="progress mt-2 mb-4">
-                <div class="progress-bar" style="width: 100%;"></div>
-            </div>
-            <p>Per portare a termine il corso devi completare tutte le ore previste / ottenere un punteggio sopra il x%.</p>
-            <a href="#" class="btn btn-primary mt-3 py-3 px-4" type="button">Continua la lezione</a>
+            <p>
+                Progress test x ore su y, x ore rimanenti (x%) - Punti x su y (x%)
+            </p>
+            <ngb-progressbar 
+                class="mt-2 mb-4"
+                type="primary"
+                [value]="50">
+            </ngb-progressbar>
+            <p>
+                Per portare a termine il corso devi completare tutte le ore previste / ottenere un punteggio sopra il x%.
+            </p>
+            <a href="#" class="btn btn-primary mt-3 py-3 px-4" type="button">
+                Continua la lezione
+            </a>
         </div>
     </div>
 </div>
