@@ -1,56 +1,30 @@
-:host { width: 100%; }
+.carta {
+    border-radius: calc(1.5rem - 1px);
+    box-shadow: 1px 3px 10px var(--grigio-test);
+}
 
-.row > div { padding-bottom: 2rem; }
+.carta:hover{
+    transform: scale(0.98);
+    transition: 250ms;
+}
+
+picture {
+    position: relative;
+}
+
+h4 {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(212, 212, 212, 0.5);
+}
 
 img {
     filter: blur(5px);
-    transform: scale(1.03); //! le immagini sono ingrandite di un 3% per rimuovere i bordi del filtro blur
+    transform: scale(1.03);
     object-fit: cover;
-    min-height: 15rem;
-    max-height: 15rem;
-    border-top-left-radius: calc(1.5rem - 1px);
-    border-top-right-radius: calc(1.5rem - 1px);
+    aspect-ratio: 1.25/1;
 }
 
-.card {
-    border-bottom: 0;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.card-img-overlay {
-    bottom: 0;
-    height: 12.5rem;
-    margin: 1.25rem 0;
-    padding-top: 0;
-    padding-bottom: 0;
+ngb-progressbar {
     border-radius: 0;
-    background-color: #ffffffb3;
-}
-
-.progress { border-radius: 0; }
-
-a {
-    height: 4rem;
-    border-bottom-left-radius: calc(1.5rem - 1px) !important;
-    border-bottom-right-radius: calc(1.5rem - 1px) !important;
-}
-
-.btn { border-radius: 0; }
-
-@media screen and (max-width:576px) {
-    .row {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .card p { font-size: 0.9rem; }
-}
-
-@media screen and (max-width: 991px) {
-    img { height: 10rem; }
 }

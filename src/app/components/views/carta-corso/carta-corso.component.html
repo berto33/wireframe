@@ -1,31 +1,30 @@
 <div class="row">
-    <div class="col-12 col-xl-3 col-lg-4 col-sm-6 pb-3"
-    *ngFor="let corso of corsi | slice:sliceStart:sliceEnd">
-        <div class="card overflow-hidden">
-            <div class="overflow-hidden">
-                <img class="card-img-top w-100 d-block" [src]=corso.img>
-            </div>
-            <div class="card-body">
-                <div class="card-img-overlay d-flex align-items-center">
-                    <h4 class="ellipsis">
-                        {{corso.titolo}}
-                    </h4>
-                </div>
-                <p class="card-text pb-2 font-weight-bold">
-                    Avanzamento corso: {{corso.progresso}}%
-                </p>
-                <ngb-progressbar
-                    type="primary"
-                    [value]=corso.progresso
-                    height="0.25rem">
-                </ngb-progressbar>
-                <p class="card-text pt-3">
-                    Data scadenza: {{corso.scadenza}}
-                </p>               
-            </div>
-        </div>
-        <!-- card button -->
-        <a href="/pagina-corso" class="btn btn-primary btn-block align-items-center">Vedi corso</a>
+  <div class="col-12 col-xl-3 col-lg-4 col-sm-6"
+  *ngFor="let corso of corsi | slice:sliceStart:sliceEnd">
+    <div class="carta overflow-hidden">
+      <picture class="carta-img d-flex align-items-center overflow-hidden">
+        <h4 class="ellipsis px-3">{{corso.titolo}}</h4>
+        <img class="w-100 img-fluid" [src]=corso.img>
+      </picture>
+      
+      <div class="carta-body p-3">
+        <p>Avanzamento corso: {{corso.progresso}}%</p>
+        <ngb-progressbar
+          class="my-3"
+          type="primary"
+          [value]=corso.progresso
+          height="0.25rem">
+        </ngb-progressbar>
+        <p>Data scadenza: {{corso.scadenza}}</p>
+      </div>
+
+      <div class="carta-btn">
+        <a class="btn btn-primary btn-block rounded-0 py-3"
+        routerLink="/pagina-corso">
+          Vedi corso
+        </a>
+      </div>
     </div>
-    <!-- TODO carta "vedi tutti" -->
+    <!-- TODO carta fake "vedi tutti" -->
+  </div>
 </div>

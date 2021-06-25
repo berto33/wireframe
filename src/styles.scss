@@ -1,9 +1,9 @@
-@import 'src/custom-variables.scss';
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'custom-variables.scss';
+@import 'bootstrap.scss';
 
-:root { --grigio-test: #aaaaaa; }
 
-// app-root
+:root { --grigio-test: #dee2e6; }
+
 body {
   display: flex;
   flex-direction: column;
