@@ -1,63 +1,63 @@
 <div class="container-fluid border-bottom">
-<div class="container mt-5">
+  <div class="container mt-5">
     <div class="row pb-5">
-        <div class="col-12">
-            <h1 class="pb-2">Buon pomeriggio, Alberto</h1>
-            <a href="#">Non sei Alberto? Esci</a>
-        </div>
+      <div class="col-12">
+        <h1 class="pb-2">Buon pomeriggio, Alberto</h1>
+        <a href="#">Non sei Alberto? Esci</a>
+      </div>
     </div>
-</div>
+  </div>
 </div>
 
 <!-- Corsi che stai seguendo -->
 <div class="container mt-5">
-    <div class="row pb-4">
-        <div class="col-12">
-            <h1 class="pb-2">Corsi che stai seguendo</h1>
-            <a href="#">Vedi tutti i corsi</a>
-        </div>
+  <div class="row pb-4">
+    <div class="col-12">
+      <h1 class="pb-2">Corsi che stai seguendo</h1>
+      <a href="#">Vedi tutti i corsi</a>
     </div>
+  </div>
 
-    <!-- Searchform -->
-    <div class="row pb-4" id="searchform">
-        <div class="col-12">
-            <div class="d-flex justify-content-around">
-                <div class="d-flex flex-column flex-grow-1">
-                    <label>Cerca corso:</label>
-                    <input type="text" class="border">
-                </div>
-                <div class="d-flex flex-column ml-3">
-                    <label>Modalità:</label>
-                    <input type="text" class="border">
-                </div>
-                <div class="d-flex flex-column ml-3">
-                    <label>Durata:</label>
-                    <input type="text" class="border">
-                </div>
-                <div class="d-flex flex-column ml-3">
-                    <label>Ordina i corsi per:</label>
-                    <input type="text" class="border">
-                </div>
-                <div class="d-flex flex-column ml-3">
-                    <label>Griglia vs tabella (icone):</label>
-                    <input type="text" class="border">
-                </div>
-            </div>
+  <!-- Searchform -->
+  <div class="row pb-4" id="searchform">
+    <div class="col-12">
+      <div class="d-flex justify-content-around">
+        <div class="d-flex flex-column flex-grow-1">
+          <label>Cerca corso:</label>
+          <input type="text" class="border" />
         </div>
-    </div>
-
-    <!-- Searchbar mobile -->
-    <div class="row pb-4" id="searchbar-filter">
-        <div class="col-12">
-            <div class="input-group input-group-sm">
-                <div class="input-group-prepend">
-                    <button class="btn btn-primary" type="button"></button>
-                </div>
-                <input type="text" class="form-control" placeholder="Cerca corso...">
-              </div>
+        <div class="d-flex flex-column ml-3">
+          <label>Modalità:</label>
+          <input type="text" class="border" />
         </div>
+        <div class="d-flex flex-column ml-3">
+          <label>Durata:</label>
+          <input type="text" class="border" />
+        </div>
+        <div class="d-flex flex-column ml-3">
+          <label>Ordina i corsi per:</label>
+          <input type="text" class="border" />
+        </div>
+        <div class="d-flex flex-column ml-3">
+          <label>Griglia vs tabella (icone):</label>
+          <input type="text" class="border" />
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Cards -->
-    <app-carta-corso></app-carta-corso>
+  <!-- Searchbar mobile -->
+  <div class="row pb-4" id="searchbar-filter">
+    <div class="col-12">
+      <div class="input-group input-group-sm">
+        <div class="input-group-prepend">
+          <button class="btn btn-primary" type="button"></button>
+        </div>
+        <input type="text" class="form-control" placeholder="Cerca corso..." />
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <app-carta-corso class="row"></app-carta-corso>
 </div>

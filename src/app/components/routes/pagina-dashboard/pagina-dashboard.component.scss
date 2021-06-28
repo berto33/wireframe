@@ -11,8 +11,7 @@
 
 #user a > img { width: 20%; }
 
-/*
- MEDIA QUERIES */
+//* MEDIA QUERIES
 
 @media screen and (max-width: 992px) {
     #user > div > img {
@@ -26,9 +25,8 @@
 }
 
 
-
-/* SEARCHBAR DEI CORSI */
-/* ? creare component per searchbar? */
+//* SEARCHBAR DEI CORSI
+// ? creare component per searchbar? */
 
 label {
     margin-left: 0.1rem;
@@ -57,7 +55,7 @@ input {
     border-bottom-right-radius: 0.5rem;
 }
 
-/* MEDIA QUERIES SEARCHBAR */
+//* MEDIA QUERIES SEARCHBAR
 
 @media screen and (max-width: 1199px) {
     #searchform {
@@ -68,43 +66,5 @@ input {
 @media screen and (min-width: 1200px) {
     #searchbar-filter {
         display: none !important;
-    }
-}
-
-/* ! CARD PROVVISORIA */
-
-#provvisoria img {   
-    opacity: 0.9;
-    object-fit: cover;
-    height: 15rem;
-}
-
-#provvisoria a {
-    height: 4rem;
-    border-bottom-left-radius: calc(1.5rem - 1px) !important;
-    border-bottom-right-radius: calc(1.5rem - 1px) !important;
-}
-
-#provvisoria .btn {
-    border-radius: 0;
-}
-
-.card {
-    border-bottom: 0;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.card-img-top {
-    filter: blur(2px);
-    border-top-left-radius: calc(1.5rem - 1px);
-    border-top-right-radius: calc(1.5rem - 1px);
-}
-
-@media screen and (max-width:767px) {
-    .card p {
-        font-size: 0.9rem;
     }
 }

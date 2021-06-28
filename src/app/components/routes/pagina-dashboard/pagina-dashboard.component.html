@@ -1,98 +1,134 @@
 <!-- user -->
 <div class="container mt-3 mt-lg-5">
-    <div class="row">
-        <div class="col-12 col-lg-8 d-flex flex-column flex-lg-row align-items-center align-items-lg-start" id="user">
-            <div class="mr-lg-3 mb-2 mb-lg-0">
-                <img src="/assets/img/pexels-italo-melo-2379004.jpg" class="img-thumbnail rounded-circle">
-            </div>
-            <div>
-                <div class="d-flex flex-column flex-lg-row align-items-center">
-                    <h1 class="mr-lg-3">Alberto Gloder</h1>
-                    <a class="btn btn-primary d-flex align-items-center mt-1 mb-2 m-lg-0 py-1 px-1">
-                        <img src="/assets/icons/edit_white.png" class="pr-2">
-                        Modifica profilo
-                    </a>
-                </div>
-                <div class="d-flex flex-column align-items-center align-items-lg-start">
-                    <div class="d-flex mb-2">
-                        <h4>Posizione</h4>
-                        <h4 class="mx-2">|</h4>
-                        <h4>Azienda</h4>
-                    </div>
-                    <p class="text-secondary">mail.aziendale@gmail.com</p>
-                </div>
-            </div>
+  <div class="row">
+    <div
+      class="
+        col-12 col-lg-8
+        d-flex
+        flex-column flex-lg-row
+        align-items-center align-items-lg-start
+      "
+      id="user"
+    >
+      <div class="mr-lg-3 mb-2 mb-lg-0">
+        <img
+          src="/assets/img/pexels-italo-melo-2379004.jpg"
+          class="img-thumbnail rounded-circle"
+        />
+      </div>
+      <div>
+        <div class="d-flex flex-column flex-lg-row align-items-center">
+          <h1 class="mr-lg-3">Alberto Gloder</h1>
+          <a
+            class="
+              btn btn-primary
+              d-flex
+              align-items-center
+              mt-1
+              mb-2
+              m-lg-0
+              py-1
+              px-1
+            "
+          >
+            <img src="/assets/icons/edit_white.png" class="pr-2" />
+            Modifica profilo
+          </a>
         </div>
-
-        <div class="col-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-end mt-3 mt-lg-0">
-            <h4 class="pb-2">I tuoi gruppi</h4>
-            <p class="border-bottom mb-1">Carraro SPA</p>
-            <p class="border-bottom mb-1">Addetti vendite Carraro</p>
-            <p class="border-bottom">Gestore POS</p>
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="d-flex mb-2">
+            <h4>Posizione</h4>
+            <h4 class="mx-2">|</h4>
+            <h4>Azienda</h4>
+          </div>
+          <p class="text-secondary">mail.aziendale@gmail.com</p>
         </div>
+      </div>
     </div>
+
+    <div
+      class="
+        col-12 col-lg-4
+        d-flex
+        flex-column
+        align-items-center align-items-lg-end
+        mt-3 mt-lg-0
+      "
+    >
+      <h4 class="pb-2">I tuoi gruppi</h4>
+      <p class="border-bottom mb-1">Carraro SPA</p>
+      <p class="border-bottom mb-1">Addetti vendite Carraro</p>
+      <p class="border-bottom">Gestore POS</p>
+    </div>
+  </div>
 </div>
 
 <!-- corsi -->
 <div class="container mt-5">
-    <div class="row pb-4">
-        <div class="col-12">
-            <h1 class="pb-2">Corsi che stai seguendo</h1>
-            <a routerLink="/pagina-utente">Vedi tutti i corsi</a>
-        </div>
+  <div class="row pb-4">
+    <div class="col-12">
+      <h1 class="pb-2">Corsi che stai seguendo</h1>
+      <a routerLink="/pagina-utente">Vedi tutti i corsi</a>
     </div>
+  </div>
 
-    <!-- Searchform -->
-    <div class="row pb-4" id="searchform">
-        <div class="col-12">
-            <div class="d-flex justify-content-around">
-                <div class="d-flex flex-column flex-grow-1">
-                    <label>Cerca corso:</label>
-                    <input type="text" class="border">
-                </div>
-                <div class="d-flex flex-column ml-3">
-                    <label>Modalità:</label>
-                    <input type="text" class="border">
-                </div>
-                <div class="d-flex flex-column ml-3">
-                    <label>Durata:</label>
-                    <input type="text" class="border">
-                </div>
-                <div class="d-flex flex-column ml-3">
-                    <label>Ordina i corsi per:</label>
-                    <input type="text" class="border">
-                </div>
-                <div class="d-flex flex-column ml-3">
-                    <label>Griglia vs tabella (icone):</label>
-                    <input type="text" class="border">
-                </div>
-            </div>
+  <!-- searchform -->
+  <div class="row pb-4" id="searchform">
+    <div class="col-12">
+      <div class="d-flex justify-content-around">
+        <div class="d-flex flex-column flex-grow-1">
+          <label>Cerca corso:</label>
+          <input type="text" class="border" />
         </div>
-    </div>
-
-    <!-- Searchbar mobile -->
-    <div class="row pb-4" id="searchbar-filter">
-        <div class="col-12">
-            <div class="input-group input-group-sm">
-                <div class="input-group-prepend">
-                    <button class="btn btn-primary" type="button"></button>
-                </div>
-                <input type="text" class="form-control" placeholder="Cerca corso...">
-              </div>
+        <div class="d-flex flex-column ml-3">
+          <label>Modalità:</label>
+          <input type="text" class="border" />
         </div>
+        <div class="d-flex flex-column ml-3">
+          <label>Durata:</label>
+          <input type="text" class="border" />
+        </div>
+        <div class="d-flex flex-column ml-3">
+          <label>Ordina i corsi per:</label>
+          <input type="text" class="border" />
+        </div>
+        <div class="d-flex flex-column ml-3">
+          <label>Griglia vs tabella (icone):</label>
+          <input type="text" class="border" />
+        </div>
+      </div>
     </div>
+  </div>
 
-    <app-carta-corso [sliceEnd]="4"></app-carta-corso>
+  <!-- searchbar mobile -->
+  <div class="row pb-4" id="searchbar-filter">
+    <div class="col-12">
+      <div class="input-group input-group-sm">
+        <div class="input-group-prepend">
+          <button class="btn btn-primary" type="button"></button>
+        </div>
+        <input type="text" class="form-control" placeholder="Cerca corso..." />
+      </div>
+    </div>
+  </div>
+
+  <!-- carte -->
+  <app-carta-corso
+    class="row"
+    [sliceEnd]="3"
+    [showSeeAll]="true"
+  >
+  </app-carta-corso>
 </div>
 
 <!-- certificati -->
 <div class="container mt-5">
-    <div class="row pb-4">
-        <div class="col-12">
-            <h1 class="pb-2">Certificati guadagnati</h1>
-            <a routerLink="#">Vedi tutti i certificati</a>
-        </div>
+  <div class="row pb-4">
+    <div class="col-12">
+      <h1 class="pb-2">Certificati guadagnati</h1>
+      <a routerLink="#">Vedi tutti i certificati</a>
     </div>
+  </div>
 
-    <app-carta-certificato [sliceEnd]="4"></app-carta-certificato>
+  <app-carta-certificato [sliceEnd]="4"></app-carta-certificato>
 </div>

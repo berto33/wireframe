@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare function scroll(): any
 
 @Component({
   selector: 'app-pagina-dashboard',
@@ -10,6 +11,8 @@ export class PaginaDashboardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void { }
-  
+  ngOnInit(): void {
+    scroll();
+  }
+
 }

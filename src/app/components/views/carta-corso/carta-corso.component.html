@@ -1,30 +1,42 @@
-<div class="row">
-  <div class="col-12 col-xl-3 col-lg-4 col-sm-6"
-  *ngFor="let corso of corsi | slice:sliceStart:sliceEnd">
-    <div class="carta overflow-hidden">
-      <picture class="carta-img d-flex align-items-center overflow-hidden">
-        <h4 class="ellipsis px-3">{{corso.titolo}}</h4>
-        <img class="w-100 img-fluid" [src]=corso.img>
-      </picture>
-      
-      <div class="carta-body p-3">
-        <p>Avanzamento corso: {{corso.progresso}}%</p>
-        <ngb-progressbar
-          class="my-3"
-          type="primary"
-          [value]=corso.progresso
-          height="0.25rem">
-        </ngb-progressbar>
-        <p>Data scadenza: {{corso.scadenza}}</p>
-      </div>
-
-      <div class="carta-btn">
-        <a class="btn btn-primary btn-block rounded-0 py-3"
-        routerLink="/pagina-corso">
-          Vedi corso
-        </a>
-      </div>
+<div
+  class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3"
+  *ngFor="let corso of corsi | slice: sliceStart:sliceEnd"
+>
+  <div class="carta overflow-hidden">
+    <div class="carta-img d-flex align-items-center overflow-hidden">
+      <h4 class="ellipsis px-3">{{ corso.titolo }}</h4>
+      <img class="w-100 img-fluid" [src]="corso.img" />
     </div>
-    <!-- TODO carta fake "vedi tutti" -->
+
+    <div class="carta-body px-3">
+      <p>Avanzamento corso: {{ corso.progresso }}%</p>
+      <ngb-progressbar
+        class="my-3"
+        type="primary"
+        [value]="corso.progresso"
+        height="0.25rem"
+      >
+      </ngb-progressbar>
+      <p>Data scadenza: {{ corso.scadenza }}</p>
+    </div>
+
+    <div class="carta-btn">
+      <a
+        class="btn btn-primary btn-block rounded-0 py-3"
+        routerLink="/pagina-corso"
+      >
+        Vedi corso
+      </a>
+    </div>
   </div>
+</div>
+
+<!-- vedi tutti -->
+<div *ngIf="showSeeAll" class="col-12 col-xl-3 col-lg-4 col-sm-6">
+  <a
+    class="carta btn btn-primary justify-content-center align-items-center"
+    routerLink="/pagina-utente"
+  >
+    <img src="/assets/icons/more_white.svg" class="w-50"/>
+  </a>
 </div>
