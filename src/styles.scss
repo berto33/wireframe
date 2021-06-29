@@ -1,7 +1,7 @@
 @import 'custom-variables.scss';
 @import 'bootstrap.scss';
 
-:root { --grigio-test: #dee2e6; }
+:root { --grigio-test: #B7B5B3; }
 
 body {
   display: flex;
@@ -39,13 +39,3 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
-// ! rimosso temporaneamente per decidere come tenere le carte
-// @media screen and (max-width:991px) {
-//   .ellipsis {
-//     display: -webkit-box;
-//     -webkit-line-clamp: 4;
-//     -webkit-box-orient: vertical;
-//     overflow: hidden;
-//   }
-// }

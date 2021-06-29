@@ -2,8 +2,7 @@ import { Corso } from './Corso';
 
 export const CORSI: Corso[] = [
   {
-    titolo:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam praesentium natus vero, quae quos culpa distinctio. Deserunt impedit optio consequuntur nisi, maiores vero soluta illo explicabo non reprehenderit reiciendis iure!',
+    titolo: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam laboriosam velit asperiores sit voluptatibus nam voluptates aliquam tempore eius tenetur?',
     progresso: 88,
     scadenza: '31/01/2000',
     img: 'https://picsum.photos/200/300?random=1',

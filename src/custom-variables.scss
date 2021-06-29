@@ -4,6 +4,12 @@
 @import 'variables';
 @import 'mixins';
 
+//* colore custom per tema generale
+
+$theme-colors: (
+  "primary": #C7201F
+);
+
 //* aggiunto breakpoint e max-width: xxl
 
 $grid-breakpoints: (

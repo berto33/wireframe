@@ -9,14 +9,12 @@ import { CORSI } from 'src/app/mock-corsi';
 
 export class CartaCorsoComponent implements OnInit {
   corsi = CORSI;
+  @Input() showSeeAll = false;
   @Input() sliceStart?: number;
   @Input() sliceEnd?: number;
-  @Input() showSeeAll = false;
+  @Input() inputClass?: string;
 
-  constructor() {
-    // var bar = document.getElementsByClassName('progress-bar');
-    // console.log(bar);
-  }
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }

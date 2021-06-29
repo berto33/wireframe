@@ -11,7 +11,7 @@
 
 #user a > img { width: 20%; }
 
-//* MEDIA QUERIES
+// MEDIA QUERIES
 
 @media screen and (max-width: 992px) {
     #user > div > img {
@@ -20,13 +20,8 @@
     }
 }
 
-@media screen and (max-width: 575px) {
-    #user p { font-size: rem; }
-}
-
-
-//* SEARCHBAR DEI CORSI
-// ? creare component per searchbar? */
+//! SEARCHBAR DEI CORSI
+//? creare component per searchbar?
 
 label {
     margin-left: 0.1rem;
@@ -55,7 +50,7 @@ input {
     border-bottom-right-radius: 0.5rem;
 }
 
-//* MEDIA QUERIES SEARCHBAR
+//! MEDIA QUERIES SEARCHBAR
 
 @media screen and (max-width: 1199px) {
     #searchform {

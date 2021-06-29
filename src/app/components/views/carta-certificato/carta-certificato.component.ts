@@ -11,6 +11,7 @@ export class CartaCertificatoComponent implements OnInit {
   corsi = CORSI;
   @Input() sliceStart?: number;
   @Input() sliceEnd?: number;
+  @Input() showSeeAll = false;
   
   constructor() { }
 
