@@ -3,7 +3,6 @@
 </div> -->
 
 <div id="btn-back" class="h-100 m-4">
-  <!--? history.back forse non è la migliore soluzione -->
   <a class="btn rounded-circle p-4" routerLink="/pagina-corso"></a>
 </div>
 
@@ -11,7 +10,7 @@
   <div class="row">
     <div class="col">
       <div id="video" class="ratio d-flex justify-content-center embed-responsive embed-responsive-16by9">
-        <iframe class="border rounded shadow embed-responsive-item" [src]="fetchedLezione.url">
+        <iframe class="border rounded shadow embed-responsive-item" [src]="fetchedLezione.url | safe">
         </iframe>
       </div>
     </div>
@@ -25,7 +24,7 @@
         <li [ngbNavItem]="1">
           <a ngbNavLink>Lezione</a>
           <ng-template ngbNavContent>
-            <h3 class="pt-3 pb-2">Contenuto Lezione</h3>
+            <h3 class="pt-3 pb-2">{{ fetchedLezione.titolo }}</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente corporis veritatis
               odit consectetur, earum, saepe excepturi eveniet fugiat numquam in dignissimos officiis
               voluptatibus aliquid ipsa aliquam accusantium ratione? Facilis in, ducimus culpa magni

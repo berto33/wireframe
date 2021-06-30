@@ -12,10 +12,9 @@ import { Lezione } from 'src/app/Lezione';
 })
 
 export class PaginaLezioneComponent implements OnInit {
-  active = 1;
   private subscription: Subscription;
   lezioni: Lezione[] = [];
-
+  active = 1;
   fetchedId: number;
   fetchedLezione: any;
 
@@ -43,6 +42,6 @@ export class PaginaLezioneComponent implements OnInit {
         this.fetchedLezione = lezione;
       }
     })
-    console.log(this.fetchedLezione)
+    // console.log(this.fetchedLezione)
   }
 }

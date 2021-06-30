@@ -4,13 +4,13 @@ export const LEZIONI: Lezione[] = [
     {
         id: 1,
         doc: false,
-        url: "",
+        url: "/assets/demo-scorm/story.html",
         titolo: "Lorem ipsum dolor sit amet."
     },
     {
         id: 2,
         doc: false,
-        url: "",
+        url: "https://www.youtube-nocookie.com/embed/HmZKgaHa3Fg?controls=0",
         titolo: "Lorem ipsum dolor sit amet consectetur."
     },
     {

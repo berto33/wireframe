@@ -16,6 +16,8 @@ import { CartaCorsoComponent } from './components/views/carta-corso/carta-corso.
 import { CartaCertificatoComponent } from './components/views/carta-certificato/carta-certificato.component';
 import { LezioneComponent } from './components/views/lezione/lezione.component';
 
+import { SafePipe } from './components/pipes/safe.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +30,7 @@ import { LezioneComponent } from './components/views/lezione/lezione.component';
     PaginaUtenteComponent,
     PaginaCorsoComponent,
     PaginaLezioneComponent,
+    SafePipe,
   ],
 
   imports: [
