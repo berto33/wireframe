@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'pagina-dashboard', component: PaginaDashboardComponent },
   { path: 'pagina-utente', component: PaginaUtenteComponent },
   { path: 'pagina-corso', component: PaginaCorsoComponent },
-  { path: 'pagina-lezione', component: PaginaLezioneComponent }
+  { path: 'pagina-lezione/:id', component: PaginaLezioneComponent }
 ]
 
 @NgModule({

@@ -1,7 +1,6 @@
 export interface Lezione {
     id: number;
-    icona: string;
-    titolo: string;
-    tipo: string;
+    doc: boolean;
     url: string;
+    titolo: string;
 }

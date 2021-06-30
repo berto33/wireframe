@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
+import { LezioniService } from '../../services/lezioni.service';
 import { Lezione } from 'src/app/Lezione';
-import { LEZIONI } from 'src/app/mock-lezioni';
 
 @Component({
   selector: 'app-lezione',
@@ -10,17 +11,27 @@ import { LEZIONI } from 'src/app/mock-lezioni';
 })
 
 export class LezioneComponent implements OnInit {
-  lezioni = LEZIONI;
+  lezioni: Lezione[] = [];
 
-  constructor(private route: Router) { }
+  constructor(
+    private route: Router,
+    private lezioniService: LezioniService
+  ) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.getLezioni();
+  }
 
-  getLezione(lezione: Lezione): void {
-    if (lezione.tipo == "doc") {
+  getLezioni(): void {
+    this.lezioni = this.lezioniService.getLezioni();
+    // console.log(this.lezioni)
+  }
+
+  gotoLezione(lezione: Lezione): void {
+    if (lezione.doc) {
       window.open(lezione.url, "_blank");
     } else {
-      this.route.navigate(['/pagina-lezione']);
+      this.route.navigate(['/pagina-lezione/' + lezione.id]);
     }
   }
 }

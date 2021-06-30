@@ -4,14 +4,14 @@
 
 <div id="btn-back" class="h-100 m-4">
   <!--? history.back forse non è la migliore soluzione -->
-  <a class="btn rounded-circle p-4" onclick="history.back()"></a>
+  <a class="btn rounded-circle p-4" routerLink="/pagina-corso"></a>
 </div>
 
 <div class="container mt-4 mb-5" id="video-lezione">
   <div class="row">
     <div class="col">
       <div id="video" class="ratio d-flex justify-content-center embed-responsive embed-responsive-16by9">
-        <iframe class="border rounded shadow embed-responsive-item" src="/assets/demo-scorm/story.html">
+        <iframe class="border rounded shadow embed-responsive-item" [src]="fetchedLezione.url">
         </iframe>
       </div>
     </div>
