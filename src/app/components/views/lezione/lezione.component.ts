@@ -11,17 +11,16 @@ import { LEZIONI } from 'src/app/mock-lezioni';
 
 export class LezioneComponent implements OnInit {
   lezioni = LEZIONI;
-  
-  constructor(private route: Router) {}
+
+  constructor(private route: Router) { }
 
   ngOnInit(): void { }
 
-  getDocOrVid(lezione: Lezione): void {
-    // console.log(lezione.url);
+  getLezione(lezione: Lezione): void {
     if (lezione.tipo == "doc") {
       window.open(lezione.url, "_blank");
     } else {
       this.route.navigate(['/pagina-lezione']);
     }
   }
-} 
+}

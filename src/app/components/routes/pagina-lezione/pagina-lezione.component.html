@@ -3,148 +3,147 @@
 </div> -->
 
 <div id="btn-back" class="h-100 m-4">
-    <!-- ? history.back forse non è la migliore soluzione -->
-    <a class="btn rounded-circle p-4" onclick="history.back()"></a>
+  <!--? history.back forse non è la migliore soluzione -->
+  <a class="btn rounded-circle p-4" onclick="history.back()"></a>
 </div>
 
 <div class="container mt-4 mb-5" id="video-lezione">
-    <div class="row">
-        <div class="col">
-            <div id="video" class="ratio d-flex justify-content-center embed-responsive embed-responsive-16by9">
-                <iframe class="border rounded shadow embed-responsive-item"
-                    src="https://www.youtube.com/embed/HmZKgaHa3Fg">
-                </iframe>
-            </div>
-        </div>
+  <div class="row">
+    <div class="col">
+      <div id="video" class="ratio d-flex justify-content-center embed-responsive embed-responsive-16by9">
+        <iframe class="border rounded shadow embed-responsive-item" src="/assets/demo-scorm/story.html">
+        </iframe>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="container mb-5" id="contenuto-lezione">
-    <div class="row">
-        <div class="col">
-            <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
-                <li [ngbNavItem]="1">
-                    <a ngbNavLink>Lezione</a>
-                    <ng-template ngbNavContent>
-                        <h3 class="pt-3 pb-2">Contenuto Lezione</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente corporis veritatis
-                            odit consectetur, earum, saepe excepturi eveniet fugiat numquam in dignissimos officiis
-                            voluptatibus aliquid ipsa aliquam accusantium ratione? Facilis in, ducimus culpa magni
-                            molestiae praesentium optio id. Necessitatibus reiciendis architecto dignissimos culpa cum,
-                            tempore vero corporis. Dolore, veritatis magni pariatur minima animi, ipsum aperiam quod
-                            nisi eveniet dolores debitis veniam aliquam vel fugit tempore sint, tenetur iste quae nam
-                            quasi quia reprehenderit voluptas expedita ratione! Sint illo quasi assumenda numquam quae
-                            commodi consequuntur, quas accusantium culpa possimus, minima temporibus deserunt incidunt
-                            accusamus qui deleniti dolorem est ipsam ducimus. Molestiae?</p><br>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, architecto. Amet enim
-                            voluptate ipsum dolorem delectus doloremque odit earum! Odit, temporibus aspernatur corrupti
-                            incidunt at autem ipsum fuga magnam. Tempore quaerat dicta quo repellat qui! Possimus iusto,
-                            id vel nihil totam error numquam molestiae eos quis fugiat, vitae, voluptatum corrupti unde
-                            laudantium. Fuga, laudantium labore commodi, quam voluptatibus vero harum, dolores
-                            asperiores voluptatum ut illo doloremque dolorem at neque dolore dolorum vitae tenetur
-                            officia? Rerum dicta, molestias maxime nam magni eum itaque vel exercitationem architecto
-                            recusandae error eveniet officia inventore sint at? Inventore, error quasi veniam
-                            exercitationem eius tenetur similique.</p>
-                    </ng-template>
-                </li>
-                <li [ngbNavItem]="2">
-                    <a ngbNavLink>Panoramica Corso</a>
-                    <ng-template ngbNavContent>
-                        <h3 class="pt-3 pb-2">Contenuto Panoramica Corso</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente corporis veritatis
-                            odit consectetur, earum, saepe excepturi eveniet fugiat numquam in dignissimos officiis
-                            voluptatibus aliquid ipsa aliquam accusantium ratione? Facilis in, ducimus culpa magni
-                            molestiae praesentium optio id. Necessitatibus reiciendis architecto dignissimos culpa cum,
-                            tempore vero corporis. Dolore, veritatis magni pariatur minima animi, ipsum aperiam quod
-                            nisi eveniet dolores debitis veniam aliquam vel fugit tempore sint, tenetur iste quae nam
-                            quasi quia reprehenderit voluptas expedita ratione! Sint illo quasi assumenda numquam quae
-                            commodi consequuntur, quas accusantium culpa possimus, minima temporibus deserunt incidunt
-                            accusamus qui deleniti dolorem est ipsam ducimus. Molestiae?</p><br>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, architecto. Amet enim
-                            voluptate ipsum dolorem delectus doloremque odit earum! Odit, temporibus aspernatur corrupti
-                            incidunt at autem ipsum fuga magnam. Tempore quaerat dicta quo repellat qui! Possimus iusto,
-                            id vel nihil totam error numquam molestiae eos quis fugiat, vitae, voluptatum corrupti unde
-                            laudantium. Fuga, laudantium labore commodi, quam voluptatibus vero harum, dolores
-                            asperiores voluptatum ut illo doloremque dolorem at neque dolore dolorum vitae tenetur
-                            officia? Rerum dicta, molestias maxime nam magni eum itaque vel exercitationem architecto
-                            recusandae error eveniet officia inventore sint at? Inventore, error quasi veniam
-                            exercitationem eius tenetur similique.</p>
-                    </ng-template>
-                </li>
-                <li [ngbNavItem]="3">
-                    <a ngbNavLink>Q&A Corso</a>
-                    <ng-template ngbNavContent>
-                        <h3 class="pt-3 pb-2">Contenuto Q&A Corso</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente corporis veritatis
-                            odit consectetur, earum, saepe excepturi eveniet fugiat numquam in dignissimos officiis
-                            voluptatibus aliquid ipsa aliquam accusantium ratione? Facilis in, ducimus culpa magni
-                            molestiae praesentium optio id. Necessitatibus reiciendis architecto dignissimos culpa cum,
-                            tempore vero corporis. Dolore, veritatis magni pariatur minima animi, ipsum aperiam quod
-                            nisi eveniet dolores debitis veniam aliquam vel fugit tempore sint, tenetur iste quae nam
-                            quasi quia reprehenderit voluptas expedita ratione! Sint illo quasi assumenda numquam quae
-                            commodi consequuntur, quas accusantium culpa possimus, minima temporibus deserunt incidunt
-                            accusamus qui deleniti dolorem est ipsam ducimus. Molestiae?</p><br>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, architecto. Amet enim
-                            voluptate ipsum dolorem delectus doloremque odit earum! Odit, temporibus aspernatur corrupti
-                            incidunt at autem ipsum fuga magnam. Tempore quaerat dicta quo repellat qui! Possimus iusto,
-                            id vel nihil totam error numquam molestiae eos quis fugiat, vitae, voluptatum corrupti unde
-                            laudantium. Fuga, laudantium labore commodi, quam voluptatibus vero harum, dolores
-                            asperiores voluptatum ut illo doloremque dolorem at neque dolore dolorum vitae tenetur
-                            officia? Rerum dicta, molestias maxime nam magni eum itaque vel exercitationem architecto
-                            recusandae error eveniet officia inventore sint at? Inventore, error quasi veniam
-                            exercitationem eius tenetur similique.</p>
-                    </ng-template>
-                </li>
-                <li [ngbNavItem]="4">
-                    <a ngbNavLink>Didablog</a>
-                    <ng-template ngbNavContent>
-                        <h3 class="pt-3 pb-2">Contenuto Didablog</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente corporis veritatis
-                            odit consectetur, earum, saepe excepturi eveniet fugiat numquam in dignissimos officiis
-                            voluptatibus aliquid ipsa aliquam accusantium ratione? Facilis in, ducimus culpa magni
-                            molestiae praesentium optio id. Necessitatibus reiciendis architecto dignissimos culpa cum,
-                            tempore vero corporis. Dolore, veritatis magni pariatur minima animi, ipsum aperiam quod
-                            nisi eveniet dolores debitis veniam aliquam vel fugit tempore sint, tenetur iste quae nam
-                            quasi quia reprehenderit voluptas expedita ratione! Sint illo quasi assumenda numquam quae
-                            commodi consequuntur, quas accusantium culpa possimus, minima temporibus deserunt incidunt
-                            accusamus qui deleniti dolorem est ipsam ducimus. Molestiae?</p><br>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, architecto. Amet enim
-                            voluptate ipsum dolorem delectus doloremque odit earum! Odit, temporibus aspernatur corrupti
-                            incidunt at autem ipsum fuga magnam. Tempore quaerat dicta quo repellat qui! Possimus iusto,
-                            id vel nihil totam error numquam molestiae eos quis fugiat, vitae, voluptatum corrupti unde
-                            laudantium. Fuga, laudantium labore commodi, quam voluptatibus vero harum, dolores
-                            asperiores voluptatum ut illo doloremque dolorem at neque dolore dolorum vitae tenetur
-                            officia? Rerum dicta, molestias maxime nam magni eum itaque vel exercitationem architecto
-                            recusandae error eveniet officia inventore sint at? Inventore, error quasi veniam
-                            exercitationem eius tenetur similique.</p>
-                    </ng-template>
-                </li>
-                <li [ngbNavItem]="5">
-                    <a ngbNavLink>Note</a>
-                    <ng-template ngbNavContent>
-                        <h3 class="pt-3 pb-2">Contenuto Note</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente corporis veritatis
-                            odit consectetur, earum, saepe excepturi eveniet fugiat numquam in dignissimos officiis
-                            voluptatibus aliquid ipsa aliquam accusantium ratione? Facilis in, ducimus culpa magni
-                            molestiae praesentium optio id. Necessitatibus reiciendis architecto dignissimos culpa cum,
-                            tempore vero corporis. Dolore, veritatis magni pariatur minima animi, ipsum aperiam quod
-                            nisi eveniet dolores debitis veniam aliquam vel fugit tempore sint, tenetur iste quae nam
-                            quasi quia reprehenderit voluptas expedita ratione! Sint illo quasi assumenda numquam quae
-                            commodi consequuntur, quas accusantium culpa possimus, minima temporibus deserunt incidunt
-                            accusamus qui deleniti dolorem est ipsam ducimus. Molestiae?</p><br>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, architecto. Amet enim
-                            voluptate ipsum dolorem delectus doloremque odit earum! Odit, temporibus aspernatur corrupti
-                            incidunt at autem ipsum fuga magnam. Tempore quaerat dicta quo repellat qui! Possimus iusto,
-                            id vel nihil totam error numquam molestiae eos quis fugiat, vitae, voluptatum corrupti unde
-                            laudantium. Fuga, laudantium labore commodi, quam voluptatibus vero harum, dolores
-                            asperiores voluptatum ut illo doloremque dolorem at neque dolore dolorum vitae tenetur
-                            officia? Rerum dicta, molestias maxime nam magni eum itaque vel exercitationem architecto
-                            recusandae error eveniet officia inventore sint at? Inventore, error quasi veniam
-                            exercitationem eius tenetur similique.</p>
-                    </ng-template>
-                </li>
-            </ul>
-            <div [ngbNavOutlet]="nav"></div>
-        </div>
+  <div class="row">
+    <div class="col">
+      <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+        <li [ngbNavItem]="1">
+          <a ngbNavLink>Lezione</a>
+          <ng-template ngbNavContent>
+            <h3 class="pt-3 pb-2">Contenuto Lezione</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente corporis veritatis
+              odit consectetur, earum, saepe excepturi eveniet fugiat numquam in dignissimos officiis
+              voluptatibus aliquid ipsa aliquam accusantium ratione? Facilis in, ducimus culpa magni
+              molestiae praesentium optio id. Necessitatibus reiciendis architecto dignissimos culpa cum,
+              tempore vero corporis. Dolore, veritatis magni pariatur minima animi, ipsum aperiam quod
+              nisi eveniet dolores debitis veniam aliquam vel fugit tempore sint, tenetur iste quae nam
+              quasi quia reprehenderit voluptas expedita ratione! Sint illo quasi assumenda numquam quae
+              commodi consequuntur, quas accusantium culpa possimus, minima temporibus deserunt incidunt
+              accusamus qui deleniti dolorem est ipsam ducimus. Molestiae?</p><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, architecto. Amet enim
+              voluptate ipsum dolorem delectus doloremque odit earum! Odit, temporibus aspernatur corrupti
+              incidunt at autem ipsum fuga magnam. Tempore quaerat dicta quo repellat qui! Possimus iusto,
+              id vel nihil totam error numquam molestiae eos quis fugiat, vitae, voluptatum corrupti unde
+              laudantium. Fuga, laudantium labore commodi, quam voluptatibus vero harum, dolores
+              asperiores voluptatum ut illo doloremque dolorem at neque dolore dolorum vitae tenetur
+              officia? Rerum dicta, molestias maxime nam magni eum itaque vel exercitationem architecto
+              recusandae error eveniet officia inventore sint at? Inventore, error quasi veniam
+              exercitationem eius tenetur similique.</p>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="2">
+          <a ngbNavLink>Panoramica Corso</a>
+          <ng-template ngbNavContent>
+            <h3 class="pt-3 pb-2">Contenuto Panoramica Corso</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente corporis veritatis
+              odit consectetur, earum, saepe excepturi eveniet fugiat numquam in dignissimos officiis
+              voluptatibus aliquid ipsa aliquam accusantium ratione? Facilis in, ducimus culpa magni
+              molestiae praesentium optio id. Necessitatibus reiciendis architecto dignissimos culpa cum,
+              tempore vero corporis. Dolore, veritatis magni pariatur minima animi, ipsum aperiam quod
+              nisi eveniet dolores debitis veniam aliquam vel fugit tempore sint, tenetur iste quae nam
+              quasi quia reprehenderit voluptas expedita ratione! Sint illo quasi assumenda numquam quae
+              commodi consequuntur, quas accusantium culpa possimus, minima temporibus deserunt incidunt
+              accusamus qui deleniti dolorem est ipsam ducimus. Molestiae?</p><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, architecto. Amet enim
+              voluptate ipsum dolorem delectus doloremque odit earum! Odit, temporibus aspernatur corrupti
+              incidunt at autem ipsum fuga magnam. Tempore quaerat dicta quo repellat qui! Possimus iusto,
+              id vel nihil totam error numquam molestiae eos quis fugiat, vitae, voluptatum corrupti unde
+              laudantium. Fuga, laudantium labore commodi, quam voluptatibus vero harum, dolores
+              asperiores voluptatum ut illo doloremque dolorem at neque dolore dolorum vitae tenetur
+              officia? Rerum dicta, molestias maxime nam magni eum itaque vel exercitationem architecto
+              recusandae error eveniet officia inventore sint at? Inventore, error quasi veniam
+              exercitationem eius tenetur similique.</p>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="3">
+          <a ngbNavLink>Q&A Corso</a>
+          <ng-template ngbNavContent>
+            <h3 class="pt-3 pb-2">Contenuto Q&A Corso</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente corporis veritatis
+              odit consectetur, earum, saepe excepturi eveniet fugiat numquam in dignissimos officiis
+              voluptatibus aliquid ipsa aliquam accusantium ratione? Facilis in, ducimus culpa magni
+              molestiae praesentium optio id. Necessitatibus reiciendis architecto dignissimos culpa cum,
+              tempore vero corporis. Dolore, veritatis magni pariatur minima animi, ipsum aperiam quod
+              nisi eveniet dolores debitis veniam aliquam vel fugit tempore sint, tenetur iste quae nam
+              quasi quia reprehenderit voluptas expedita ratione! Sint illo quasi assumenda numquam quae
+              commodi consequuntur, quas accusantium culpa possimus, minima temporibus deserunt incidunt
+              accusamus qui deleniti dolorem est ipsam ducimus. Molestiae?</p><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, architecto. Amet enim
+              voluptate ipsum dolorem delectus doloremque odit earum! Odit, temporibus aspernatur corrupti
+              incidunt at autem ipsum fuga magnam. Tempore quaerat dicta quo repellat qui! Possimus iusto,
+              id vel nihil totam error numquam molestiae eos quis fugiat, vitae, voluptatum corrupti unde
+              laudantium. Fuga, laudantium labore commodi, quam voluptatibus vero harum, dolores
+              asperiores voluptatum ut illo doloremque dolorem at neque dolore dolorum vitae tenetur
+              officia? Rerum dicta, molestias maxime nam magni eum itaque vel exercitationem architecto
+              recusandae error eveniet officia inventore sint at? Inventore, error quasi veniam
+              exercitationem eius tenetur similique.</p>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="4">
+          <a ngbNavLink>Didablog</a>
+          <ng-template ngbNavContent>
+            <h3 class="pt-3 pb-2">Contenuto Didablog</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente corporis veritatis
+              odit consectetur, earum, saepe excepturi eveniet fugiat numquam in dignissimos officiis
+              voluptatibus aliquid ipsa aliquam accusantium ratione? Facilis in, ducimus culpa magni
+              molestiae praesentium optio id. Necessitatibus reiciendis architecto dignissimos culpa cum,
+              tempore vero corporis. Dolore, veritatis magni pariatur minima animi, ipsum aperiam quod
+              nisi eveniet dolores debitis veniam aliquam vel fugit tempore sint, tenetur iste quae nam
+              quasi quia reprehenderit voluptas expedita ratione! Sint illo quasi assumenda numquam quae
+              commodi consequuntur, quas accusantium culpa possimus, minima temporibus deserunt incidunt
+              accusamus qui deleniti dolorem est ipsam ducimus. Molestiae?</p><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, architecto. Amet enim
+              voluptate ipsum dolorem delectus doloremque odit earum! Odit, temporibus aspernatur corrupti
+              incidunt at autem ipsum fuga magnam. Tempore quaerat dicta quo repellat qui! Possimus iusto,
+              id vel nihil totam error numquam molestiae eos quis fugiat, vitae, voluptatum corrupti unde
+              laudantium. Fuga, laudantium labore commodi, quam voluptatibus vero harum, dolores
+              asperiores voluptatum ut illo doloremque dolorem at neque dolore dolorum vitae tenetur
+              officia? Rerum dicta, molestias maxime nam magni eum itaque vel exercitationem architecto
+              recusandae error eveniet officia inventore sint at? Inventore, error quasi veniam
+              exercitationem eius tenetur similique.</p>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="5">
+          <a ngbNavLink>Note</a>
+          <ng-template ngbNavContent>
+            <h3 class="pt-3 pb-2">Contenuto Note</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente corporis veritatis
+              odit consectetur, earum, saepe excepturi eveniet fugiat numquam in dignissimos officiis
+              voluptatibus aliquid ipsa aliquam accusantium ratione? Facilis in, ducimus culpa magni
+              molestiae praesentium optio id. Necessitatibus reiciendis architecto dignissimos culpa cum,
+              tempore vero corporis. Dolore, veritatis magni pariatur minima animi, ipsum aperiam quod
+              nisi eveniet dolores debitis veniam aliquam vel fugit tempore sint, tenetur iste quae nam
+              quasi quia reprehenderit voluptas expedita ratione! Sint illo quasi assumenda numquam quae
+              commodi consequuntur, quas accusantium culpa possimus, minima temporibus deserunt incidunt
+              accusamus qui deleniti dolorem est ipsam ducimus. Molestiae?</p><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, architecto. Amet enim
+              voluptate ipsum dolorem delectus doloremque odit earum! Odit, temporibus aspernatur corrupti
+              incidunt at autem ipsum fuga magnam. Tempore quaerat dicta quo repellat qui! Possimus iusto,
+              id vel nihil totam error numquam molestiae eos quis fugiat, vitae, voluptatum corrupti unde
+              laudantium. Fuga, laudantium labore commodi, quam voluptatibus vero harum, dolores
+              asperiores voluptatum ut illo doloremque dolorem at neque dolore dolorum vitae tenetur
+              officia? Rerum dicta, molestias maxime nam magni eum itaque vel exercitationem architecto
+              recusandae error eveniet officia inventore sint at? Inventore, error quasi veniam
+              exercitationem eius tenetur similique.</p>
+          </ng-template>
+        </li>
+      </ul>
+      <div [ngbNavOutlet]="nav"></div>
     </div>
+  </div>
 </div>

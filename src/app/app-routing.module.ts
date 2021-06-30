@@ -7,15 +7,15 @@ import { PaginaCorsoComponent } from './components/routes/pagina-corso/pagina-co
 import { PaginaLezioneComponent } from './components/routes/pagina-lezione/pagina-lezione.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/pagina-dashboard', pathMatch: 'full'},
-  {path: 'pagina-dashboard', component: PaginaDashboardComponent},
-  {path: 'pagina-utente', component: PaginaUtenteComponent},
-  {path: 'pagina-corso', component: PaginaCorsoComponent},
-  {path: 'pagina-lezione', component: PaginaLezioneComponent}  
+  { path: '', redirectTo: '/pagina-dashboard', pathMatch: 'full' },
+  { path: 'pagina-dashboard', component: PaginaDashboardComponent },
+  { path: 'pagina-utente', component: PaginaUtenteComponent },
+  { path: 'pagina-corso', component: PaginaCorsoComponent },
+  { path: 'pagina-lezione', component: PaginaLezioneComponent }
 ]
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 

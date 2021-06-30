@@ -1,11 +1,10 @@
 #btn-back {
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    background-color: transparent;
-}
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  background-color: transparent;
 
-#btn-back a {
+  a {
     position: -webkit-sticky;
     position: sticky;
     top: 1.5rem;
@@ -13,16 +12,22 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--grigio-test);
+  }
+
+  a:hover {
+    transform: scale(0.90);
+    transition: 250ms;
+    
+  }
 }
 
 @media screen and (max-width: 767px) {
-    a {
-        font-size: 0.9rem;
-    }
+  a {
+    font-size: 0.9rem;
+  }
 }
 
 // * SIDEBAR
-
 // #sidebar {
 //     display: flex;
 //     flex-direction: column;

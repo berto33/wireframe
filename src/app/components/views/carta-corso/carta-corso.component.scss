@@ -15,13 +15,13 @@
 
 .carta-img {
   position: relative;
-}
 
-.carta-img img {
-  aspect-ratio: 1.25/1;
-  object-fit: cover;
-  transform: scale(1.03);
-  filter: blur(5px);
+  img {
+    aspect-ratio: 1.25/1;
+    object-fit: cover;
+    transform: scale(1.03);
+    filter: blur(5px);
+  }
 }
 
 h4 {
@@ -34,8 +34,33 @@ ngb-progressbar {
   border-radius: 0;
 }
 
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-@media screen and (min-width:576px) and (max-width:768px) {
+// MEDIA QUERIES
+
+@media screen and (max-width:575px) {
+  .carta {
+    height: 25rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .carta {
+    height: 20rem;
+
+    img {
+      aspect-ratio: 1.50/1;
+    }
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .carta-img img {
+    aspect-ratio: 1.50/1;
+  }
+}
+
+@media screen and (min-width:1199px) and (max-width:1399px) {
   .carta {
     height: 22.5rem;
   }

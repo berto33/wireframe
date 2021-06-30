@@ -3,19 +3,22 @@
 
 :root { --grigio-test: #B7B5B3; }
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  font-family: 'Raleway', sans-serif;
-  color: var(--dark);
-}
-
 html {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+app-root, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: var(--dark);
 }
 
 .btn {

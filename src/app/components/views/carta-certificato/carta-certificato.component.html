@@ -1,10 +1,9 @@
-<div
-  class="col-12 col-sm-6 col-lg-4 col-xl-3"
-  *ngFor="let corso of corsi | slice: sliceStart:sliceEnd"
->
+<div class="col-12 col-sm-6 col-lg-4 col-xl-3" [ngClass]="inputClass"
+  *ngFor="let corso of corsi | slice: sliceStart:sliceEnd">
   <div class="carta overflow-hidden">
     <div class="carta-img overflow-hidden">
-      <h4 class="ellipsis m-3 p-1 rounded-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, saepe aperiam a suscipit molestiae possimus odit asperiores eligendi laudantium tempore.</h4>
+      <h4 class="ellipsis m-3 p-1 rounded-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, saepe
+        aperiam a suscipit molestiae possimus odit asperiores eligendi laudantium tempore.</h4>
       <img class="w-100 img-fluid" [src]="corso.img" />
     </div>
     <div class="carta-body px-3">
@@ -12,10 +11,7 @@
       <p>Data scadenza: {{ corso.scadenza }}</p>
     </div>
     <div class="carta-btn">
-      <a
-        class="btn btn-primary btn-block rounded-0 py-3"
-        routerLink="/pagina-corso"
-      >
+      <a class="btn btn-primary btn-block rounded-0 py-3" routerLink="/pagina-corso">
         Vedi certificato
       </a>
     </div>
@@ -23,11 +19,8 @@
 </div>
 
 <!-- vedi tutti -->
-<div *ngIf="showSeeAll" class="col-12 col-xl-3 col-lg-4 col-sm-6">
-  <a
-    class="carta btn btn-primary justify-content-center align-items-center"
-    routerLink=""
-  >
+<div *ngIf="showSeeAll" class="col-12 col-xl-3 col-lg-4 col-sm-6" [ngClass]="inputClass">
+  <a class="carta btn btn-primary justify-content-center align-items-center" routerLink="">
     <img src="/assets/icons/more_white.svg" class="w-50" />
   </a>
 </div>

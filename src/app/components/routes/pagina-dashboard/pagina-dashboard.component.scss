@@ -1,65 +1,71 @@
-#user > div > img {
+#user {
+  div > img {
     height: 10rem;
     width: 10rem;
     object-fit:cover;
-}
+  }
 
-#user a {
+  a {
     width: fit-content;
     font-size: 0.8rem;
-}
 
-#user a > img { width: 20%; }
+  img {
+      width: 20%;
+    }
+  }
+}
 
 // MEDIA QUERIES
 
 @media screen and (max-width: 992px) {
-    #user > div > img {
-        height: 8rem;
-        width: 8rem;
-    }
+  #user > div > img {
+    height: 8rem;
+    width: 8rem;
+  }
 }
 
 //! SEARCHBAR DEI CORSI
 //? creare component per searchbar?
 
 label {
-    margin-left: 0.1rem;
+  margin-left: 0.1rem;
 }
 
 input {
-    padding-left: 0.4rem;
-    border-radius: 0.5rem;
+  padding-left: 0.4rem;
+  border-radius: 0.5rem;
 }
 
-#searchbar-filter button {
+#searchbar-filter {
+  button {
     width: 2.5rem;
     background-image: url(/assets/icons/search_white.png);
     background-repeat: no-repeat;
     background-position: center;
     border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-}
+    border-bottom-left-radius: 0.5rem;    
 
-#searchbar-filter button > img {
-    height: auto;
-}
+    img {
+      height: auto;
+    }
+  }
 
-#searchbar-filter input {
+  input {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+  }
 }
 
 //! MEDIA QUERIES SEARCHBAR
 
 @media screen and (max-width: 1199px) {
-    #searchform {
-        display: none !important;
-    }
+  #searchform {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    #searchbar-filter {
-        display: none !important;
-    }
+  #searchbar-filter {
+    display: none !important;
+  }
 }

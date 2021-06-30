@@ -9,10 +9,11 @@ import { CORSI } from 'src/app/mock-corsi';
 
 export class CartaCertificatoComponent implements OnInit {
   corsi = CORSI;
+  @Input() showSeeAll = false;
   @Input() sliceStart?: number;
   @Input() sliceEnd?: number;
-  @Input() showSeeAll = false;
-  
+  @Input() inputClass?: string;
+
   constructor() { }
 
   ngOnInit(): void { }

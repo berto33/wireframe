@@ -1,5 +1,5 @@
 <!-- utente -->
-<div class="container mt-3 mt-lg-5">
+<div class="container my-5 mt-lg-5">
   <div class="row">
     <div class="col-12 col-lg-8 d-flex flex-column flex-lg-row align-items-center align-items-lg-start" id="user">
       <div class="mr-lg-3 mb-2 mb-lg-0">
@@ -13,8 +13,8 @@
             Modifica profilo
           </a>
         </div>
-        <div class="d-flex flex-column align-items-center align-items-lg-start h-100">
-          <h4 class="align-items-end">Posizione | Azienda</h4>
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <h4 class="pt-1 pb-2">Posizione | Azienda</h4>
           <p class="text-secondary">mail.aziendale@gmail.com</p>
         </div>
       </div>
@@ -30,7 +30,7 @@
 </div>
 
 <!-- corsi -->
-<div class="container mt-5">
+<div class="container">
   <div class="row pb-4">
     <div class="col-12">
       <h1 class="pb-2">Corsi che stai seguendo</h1>
@@ -79,11 +79,11 @@
   </div>
 
   <!-- carte -->
-  <app-carta-corso class="row" [sliceEnd]="3" [showSeeAll]="true"></app-carta-corso>
+  <app-carta-corso class="row" [sliceEnd]="3" [showSeeAll]="true" [inputClass]="'pb-5'"></app-carta-corso>
 </div>
 
 <!-- certificati -->
-<div class="container my-5">
+<div class="container">
   <div class="row pb-4">
     <div class="col-12">
       <h1 class="pb-2">Certificati guadagnati</h1>
@@ -91,5 +91,5 @@
     </div>
   </div>
 
-  <app-carta-certificato class="row" [sliceEnd]="3" [showSeeAll]="true"></app-carta-certificato>
+  <app-carta-certificato class="row" [sliceEnd]="3" [showSeeAll]="true" [inputClass]="'pb-5'"></app-carta-certificato>
 </div>

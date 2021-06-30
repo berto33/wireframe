@@ -1,34 +1,65 @@
 .container-fluid a {
-    width: fit-content;
-    border-radius: calc(1.5rem - 1px);
+  width: fit-content;
+  border-radius: 1rem;
 }
 
 #calendari a {
-    flex-direction: row;
-    align-items: center;
-    padding: 0.3rem 1rem;
-    font-size: 0.8rem;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  font-size: 0.8rem;
+}
+
+h4 {
+  padding-bottom: 0.5rem;
+}
+
+#info > div {
+  height: fit-content;
+  border: 1px solid #dee2e6;
+  border-radius: 1rem;
+  background-color: var(--light);
 }
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 575px) {
-    .container-fluid{
-        padding-left: 0;
-        padding-right: 0;
+  .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #calendari {
+    margin-bottom: 0.5rem;
+
+    a {
+      width: fit-content;
     }
 
-    p { font-size: 0.7rem; }
+    a:not(:last-child) {
+      margin-bottom: 0.25rem;
+    }
 
-    #calendari { margin-bottom: 0.5rem; }
-
-    #calendari a { width: fit-content; }
-
-    #calendari a:not(:last-child) { margin-bottom: 0.25rem; }
-
-    #calendari button:not(:last-child) { margin-bottom: 0.5rem; }
+    button:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
-    #calendari { justify-content: space-around; }
+  #calendari {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #info {
+    margin-top: 1.5rem;
+
+    div {
+      border: none;
+      border-radius: 0;
+      background-color: transparent;
+    }
+  }
 }
