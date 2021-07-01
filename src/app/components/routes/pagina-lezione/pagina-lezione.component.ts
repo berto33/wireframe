@@ -15,13 +15,11 @@ export class PaginaLezioneComponent implements OnInit {
   private subscription: Subscription;
   lezioni: Lezione[] = [];
   active = 1;
+
   fetchedId: number;
   fetchedLezione: any;
 
-  constructor(
-    private lezioniService: LezioniService,
-    private activatedRoute: ActivatedRoute
-  ) {
+  constructor(private lezioniService: LezioniService, private activatedRoute: ActivatedRoute) {
     this.subscription = activatedRoute.params.subscribe(
       (param: any) => this.fetchedId = param['id']
     )
@@ -41,7 +39,7 @@ export class PaginaLezioneComponent implements OnInit {
       if (this.fetchedId == lezione.id) {
         this.fetchedLezione = lezione;
       }
-    })
+    });
     // console.log(this.fetchedLezione)
   }
 }

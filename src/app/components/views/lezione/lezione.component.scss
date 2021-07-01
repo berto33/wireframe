@@ -13,10 +13,3 @@ li:not(:last-child) {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-@media screen and (max-width: 575px) {
-  a {
-    justify-content: left;
-    text-align: left;
-  }
-}

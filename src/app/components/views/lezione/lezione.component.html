@@ -1,6 +1,7 @@
 <ul class="row d-flex flex-column p-0">
   <li class="col-12 p-0" *ngFor="let lezione of lezioni">
-    <a class="btn btn-primary d-flex align-items-center px-5 py-2 w-100 rounded-0" (click)="gotoLezione(lezione)">
+    <a class="btn btn-primary d-flex justify-content-start align-items-center px-lg-5 py-2 w-100 rounded-0"
+      (click)="gotoLezione(lezione)">
       <img src="/assets/icons/school_white.png" class="mr-3">
       <h3 class="ellipsis-one">
         Lezione {{ lezione.id }}: {{ lezione.titolo }}
